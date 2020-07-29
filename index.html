@@ -13,6 +13,30 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
 
+ .wrapper {overflow: auto;}
+ #main {margin-left: 4px;}
+ #leftsidebar {
+  float: none;
+  width: auto;
+}
+ #menulist {
+  margin: 0;
+  padding: 0;
+}
+ .menuitem {
+  background: #CDF0F6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+ @media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+ 
+ 
 .icon-bar {
   position: fixed;
   -webkit-transform: translateY(0%);
@@ -209,16 +233,23 @@ img {vertical-align: middle;}
 </head>
 <body>
 
+ <div class="wrapper">
+  <div id="leftsidebar">
+    <ul id="menulist">
 <div class="icon-bar">
-  <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a> 
-  <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a> 
-  <a href="https://www.google.com" class="google"><i class="fa fa-google"></i></a> 
-  <a href="https://www.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="https://www.youtube.com" class="youtube"><i class="fa fa-youtube"></i></a>
-  <a href="https://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a>
-  <a href="https://www.snapchat.com" class="snapchat-ghost"><i class="fa fa-snapchat-ghost"></i></a>
-  <a href="https://www.tumblr.com" class="tumblr"><i class="fa fa-tumblr"></i></a>
+  <a href="https://www.facebook.com" class="facebook"><li class="fa fa-facebook"></li></a> 
+  <a href="https://www.twitter.com" class="twitter"><li class="fa fa-twitter"></li></a> 
+  <a href="https://www.google.com" class="google"><li class="fa fa-google"></li></a> 
+  <a href="https://www.linkedin.com" class="linkedin"><li class="fa fa-linkedin"></li></a>
+  <a href="https://www.youtube.com" class="youtube"><li class="fa fa-youtube"></li></a>
+  <a href="https://www.instagram.com" class="instagram"><li class="fa fa-instagram"></li></a>
+  <a href="https://www.snapchat.com" class="snapchat-ghost"><li class="fa fa-snapchat-ghost"></li></a>
+  <a href="https://www.tumblr.com" class="tumblr"><li class="fa fa-tumblr"></li></a>
     </div>
+     </ul>
+  </div>
+  
+  <div id="main">
 
 <h2><center><pclass="sansserif">New York Streets</p></center></h2>
 
